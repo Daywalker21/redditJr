@@ -2,7 +2,7 @@ from django.db import models
 
 # Create your models here.
 
-class user_data(models.Model):
-	email = models.EmailField()
-	post = models.TextField()
+class User_data(models.Model):
+	user_name = models.CharField(max_length = 20,unique = True,null = False)
+	subreddits = models.TextField()
 # 	
